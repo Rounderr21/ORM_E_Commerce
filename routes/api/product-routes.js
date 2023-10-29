@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
   //THINK THIS IS DONE
   try{
     const products = await Product.findAll({
-      include: [{model: Category}, {model: Tag}]
+      include: Category, Tag
     });
     res.json(products);
   } catch (err) {
@@ -23,7 +23,7 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   try {
     const product = await Product.findByPk(req.params.id, {
-      include: [{model: Category}, {model: Tag}]
+      include: Category, Tag
     });
     res.json(product);
   } catch (err) {
@@ -118,7 +118,18 @@ router.put('/:id', (req, res) => {
     });
 });
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', async (req, res) => {
+  try{
+    const product = await Product.destroy({
+      where: {
+        id: req.params.id
+      }
+    });
+    res.json(product);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: 'Server Error' });
+  }
   // delete one product by its `id` value
 });
 
