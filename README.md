@@ -21,10 +21,8 @@ Pushed out DB file, Javascript files, Images, and README when finishing any codi
 https://github.com/Rounderr21/ORM_E_Commerce
 
 # Screenshot of the Project:
-![Alt text](./images/gettingGetRequest.png "Using get request to find the catergories information")
-![Alt text](./images/getRequestId.png "Using get request by id to find a specific id")
-![Alt text](./images/Posting.png "Using the post request to post a new catergory into the database")
-![Alt text](./images/Put.png "Using the put request to rename the catergory name of that specific id")
-![Alt text](./images/deleting.png "Using the delete request to remove that specific category id from the database")
-![Alt text](./images/Screenshot%20(131).png "Using the get request to determine that the delete request has been successful")
-
+![Alt text](./Images/gettingGetRequest.png "Using get request to find the catergories information")
+![Alt text](./Images/getRequestId.png "Using get request by id to find a specific id")
+![Alt text](./Images/Posting.png "Using the post request to post a new catergory into the database")
+![Alt text](./Images/Put.png "Using the put request to rename the catergory name of that specific id")
+![Alt text](./Images/deleting.png "Using the delete request to remove that specific category id from the database")
